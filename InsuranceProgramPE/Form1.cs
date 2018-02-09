@@ -22,8 +22,19 @@ namespace InsuranceProgramPE
             else createUserName(txtFullName.Text);
         }
 
+
         private void createUserName(string nameIn) {
 
+            int pos = nameIn.IndexOf(" ");
+
+            string firstInitial = nameIn.Substring(0,1), 
+                surname = nameIn.Substring(pos+1);
+
+            lblUsername.Text = firstInitial + surname;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e){
+            Application.Exit();
         }
     }
 }

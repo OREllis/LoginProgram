@@ -32,7 +32,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEnter
@@ -53,6 +53,7 @@
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtFullName
             // 
@@ -70,22 +71,22 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Enter your Full Name";
             // 
-            // label2
+            // lblUsername
             // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(16, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(12, 15);
-            this.label2.TabIndex = 4;
-            this.label2.Text = " ";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblUsername.Location = new System.Drawing.Point(16, 130);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(12, 15);
+            this.lblUsername.TabIndex = 4;
+            this.lblUsername.Text = " ";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtFullName);
             this.Controls.Add(this.btnExit);
@@ -104,7 +105,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUsername;
     }
 }
 
